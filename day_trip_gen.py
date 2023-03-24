@@ -10,12 +10,30 @@ def display_destination(list_destinations):
     for place in list_destinations:
         print(f'{destination}{place}')
 
+def display_resturant(list_resturants):
+    resturant = "Destination: "
+    for rest in list_resturants:
+        print(f'{resturant}{rest}')
 
-# display_destination(destinations)
+def display_transportation(list_transportations):
+    transportation = "Destination: "
+    for travel in list_transportations:
+        print(f'{transportation}{travel}')
+
+def display_entertainment(list_entertainments):
+    entertainment = "Destination: "
+    for ent in list_entertainments:
+        print(f'{entertainment}{ent}')
+
 
 random_destination = random.choices(destinations)
 display_destination(random_destination)
-
+random_resturant = random.choices(resturants)
+display_destination(random_resturant)
+random_transportation = random.choices(transportations)
+display_destination(random_transportation)
+random_entertainment = random.choices(entertainments)
+display_destination(random_entertainment)
 
 
 
