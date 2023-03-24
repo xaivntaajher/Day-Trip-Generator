@@ -21,6 +21,27 @@ def display_entertainment(list_entertainments):
     for ent in list_entertainments:
         print(ent)
 
+def display_new_destination(list_new_destinations):
+    for new_place in list_new_destinations:
+        print(new_place)
+
+def display_new_resturant(list_new_resturants):
+    for new_rest in list_new_resturants:
+        print(new_rest)
+
+def display_new_transportation(list_new_transportations):
+    for new_travel in list_new_transportations:
+        print(new_travel)
+
+def display_new_entertainment(list_new_entertainments):
+    for new_ent in list_new_entertainments:
+        print(new_ent)
+
+random_new_destination = random.choice(destinations)
+random_new_resturant = random.choice(resturants)
+random_new_transportation = random.choice(transportations)
+random_new_entertainment = random.choice(entertainments)
+
 
 random_destination = random.choice(destinations)
 print(f'Destination: {random_destination}')
@@ -41,7 +62,19 @@ if satisfy == 'Y':
     print(f'Transportation: {random_transportation}')
     print(f'Entertainment: {random_entertainment}')
 elif satisfy == 'N':
-    print('What would you like to change? Destination, Resturant, Transportation, Entertainment')
+    not_satify = input('What would you like to change? Destination, Resturant, Transportation, Entertainment ' )
+    if not_satify == 'Destination':
+        print(f'Destination: {random_new_destination}')
+        print(f'Resturant: {random_resturant}')
+        print(f'Transportation: {random_transportation}')
+        print(f'Entertainment: {random_entertainment}')
+    
+
+
+
+
+
+    
 
 
 
