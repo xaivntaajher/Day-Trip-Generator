@@ -31,11 +31,19 @@ print(f'Transportation: {random_transportation}')
 random_entertainment = random.choice(entertainments)
 print(f'entertainment: {random_entertainment}')
 
+satisfy = input('Are you satisfy with your trip? ')
+print(satisfy)
 
+yes = 'y'
+if yes == 'y':
+    print(f'Destination: {random_destination}')
+    print(f'Resturant: {random_resturant}')
+    print(f'Transportation: {random_transportation}')
+    print(f'entertainment: {random_entertainment}')
 
-
-
-
+no = 'n'
+if no == 'n':
+    
 
 
 
