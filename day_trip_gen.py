@@ -68,6 +68,21 @@ elif satisfy == 'N':
         print(f'Resturant: {random_resturant}')
         print(f'Transportation: {random_transportation}')
         print(f'Entertainment: {random_entertainment}')
+    elif not_satify == 'Resturant':
+        print(f'Destination: {random_destination}')
+        print(f'Resturant: {random_new_resturant}')
+        print(f'Transportation: {random_transportation}')
+        print(f'Entertainment: {random_entertainment}')
+    elif not_satify == 'Transportation':
+        print(f'Destination: {random_destination}')
+        print(f'Resturant: {random_resturant}')
+        print(f'Transportation: {random_new_transportation}')
+        print(f'Entertainment: {random_entertainment}')
+    elif not_satify == 'Entertainment':
+        print(f'Destination: {random_destination}')
+        print(f'Resturant: {random_resturant}')
+        print(f'Transportation: {random_transportation}')
+        print(f'Entertainment: {random_new_entertainment}')
     
 
 
