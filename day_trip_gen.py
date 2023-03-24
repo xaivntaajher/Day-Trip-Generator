@@ -29,11 +29,11 @@ def display_entertainment(list_entertainments):
 random_destination = random.choices(destinations)
 display_destination(random_destination)
 random_resturant = random.choices(resturants)
-display_destination(random_resturant)
+display_resturant(random_resturant)
 random_transportation = random.choices(transportations)
-display_destination(random_transportation)
+display_transportation(random_transportation)
 random_entertainment = random.choices(entertainments)
-display_destination(random_entertainment)
+display_entertainment(random_entertainment)
 
 
 
