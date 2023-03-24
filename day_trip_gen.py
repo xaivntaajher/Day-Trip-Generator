@@ -34,16 +34,17 @@ print(f'entertainment: {random_entertainment}')
 satisfy = input('Are you satisfy with your trip? ')
 print(satisfy)
 
-yes = 'y'
-if yes == 'y':
+if satisfy == 'y':
     print(f'Destination: {random_destination}')
     print(f'Resturant: {random_resturant}')
     print(f'Transportation: {random_transportation}')
     print(f'entertainment: {random_entertainment}')
+elif satisfy == 'n':
+    print('what would you like to do? ')
 
-no = 'n'
-if no == 'n':
-    
+
+
+
 
 
 
