@@ -29,18 +29,19 @@ print(f'Resturant: {random_resturant}')
 random_transportation = random.choice(transportations)
 print(f'Transportation: {random_transportation}')
 random_entertainment = random.choice(entertainments)
-print(f'entertainment: {random_entertainment}')
+print(f'Eyntertainment: {random_entertainment}')
 
-satisfy = input('Are you satisfy with your trip? ')
+satisfy = input('Are you satisfy with your trip? Y or N ')
 print(satisfy)
 
-if satisfy == 'y':
+if satisfy == 'Y':
+    print(f'Have fun and enjoy your trip!')
     print(f'Destination: {random_destination}')
     print(f'Resturant: {random_resturant}')
     print(f'Transportation: {random_transportation}')
-    print(f'entertainment: {random_entertainment}')
-elif satisfy == 'n':
-    print('what would you like to do? ')
+    print(f'Entertainment: {random_entertainment}')
+elif satisfy == 'N':
+    print('What would you like to change? Destination, Resturant, Transportation, Entertainment')
 
 
 
