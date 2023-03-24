@@ -11,17 +11,17 @@ def display_destination(list_destinations):
         print(f'{destination}{place}')
 
 def display_resturant(list_resturants):
-    resturant = "Destination: "
+    resturant = "Resturant: "
     for rest in list_resturants:
         print(f'{resturant}{rest}')
 
 def display_transportation(list_transportations):
-    transportation = "Destination: "
+    transportation = "Transportation: "
     for travel in list_transportations:
         print(f'{transportation}{travel}')
 
 def display_entertainment(list_entertainments):
-    entertainment = "Destination: "
+    entertainment = "Entertainment: "
     for ent in list_entertainments:
         print(f'{entertainment}{ent}')
 
