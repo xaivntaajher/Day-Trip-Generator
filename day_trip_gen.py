@@ -6,34 +6,30 @@ transportations = ['Car', 'Train', 'Airplane', 'Bus', 'Bike']
 entertainments = ['Movie', 'Comedy Show', 'Skydiving', 'Bungee Jumping', 'Concert']
 
 def display_destination(list_destinations):
-    destination = "Destination: "
     for place in list_destinations:
-        print(f'{destination}{place}')
+        print(place)
 
 def display_resturant(list_resturants):
-    resturant = "Resturant: "
     for rest in list_resturants:
-        print(f'{resturant}{rest}')
+        print(rest)
 
 def display_transportation(list_transportations):
-    transportation = "Transportation: "
     for travel in list_transportations:
-        print(f'{transportation}{travel}')
+        print(travel)
 
 def display_entertainment(list_entertainments):
-    entertainment = "Entertainment: "
     for ent in list_entertainments:
-        print(f'{entertainment}{ent}')
+        print(ent)
 
 
-random_destination = random.choices(destinations)
-display_destination(random_destination)
-random_resturant = random.choices(resturants)
-display_resturant(random_resturant)
-random_transportation = random.choices(transportations)
-display_transportation(random_transportation)
-random_entertainment = random.choices(entertainments)
-display_entertainment(random_entertainment)
+random_destination = random.choice(destinations)
+print(f'Destination: {random_destination}')
+random_resturant = random.choice(resturants)
+print(f'Resturant: {random_resturant}')
+random_transportation = random.choice(transportations)
+print(f'Transportation: {random_transportation}')
+random_entertainment = random.choice(entertainments)
+print(f'entertainment: {random_entertainment}')
 
 
 
