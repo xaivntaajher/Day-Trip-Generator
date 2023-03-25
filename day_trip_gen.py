@@ -106,6 +106,7 @@ elif satisfy == 'N':
 
     new_satify = input('Are you now satisfied with your trip? Y or N ')
     print(new_satify)
+    
     if new_satify == "Y":
         print()
     elif new_satify == 'N':
@@ -118,18 +119,15 @@ elif satisfy == 'N':
             
     
 
-
+# def run_day_trip_gen():
+# def print_full_trip(list_of_options):
+# def generate_random_item(list_of_items):
+# def determine_satisfication(current_trip, trip options):
+# def re_select_options(current_trip, options):
+# run_day_trip_gen()
 
 
     
-
-
-
-
-
-
-
-
 # (5 points): As a developer, I want to make at least three commits with descriptive messages -
 # (5 points): As a developer, I want to store my destinations, restaurants, mode of transportation, and entertainment in their own separate Lists. -
 # (5 points): As a user, I want a destination to be randomly selected for my day trip. 
