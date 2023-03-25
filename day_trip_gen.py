@@ -72,7 +72,7 @@ print(f'Transportation: {random_transportation}')
 random_entertainment = random.choice(entertainments)
 print(f'Eyntertainment: {random_entertainment}')
 
-satisfy = input('Are you satisfy with your trip? Y or N ')
+satisfy = input('Are you satisfied with your trip? Y or N ')
 print(satisfy)
 
 if satisfy == 'Y':
@@ -104,10 +104,16 @@ elif satisfy == 'N':
         print(f'Transportation: {random_transportation}')
         print(f'Entertainment: {random_new_entertainment}')
 
-    new_satify = input('Are you now satisfy with your trip? Y or N ')
+    new_satify = input('Are you now satisfied with your trip? Y or N ')
     print(new_satify)
     if new_satify == "Y":
-        print()    
+        print()
+    elif new_satify == 'N':
+        print(not_satify)
+        # print(f'Destination: {random_new_destination}')
+        # print(f'Resturant: {random_new_resturant}')
+        # print(f'Transportation: {random_new_transportation}')
+        # print(f'Entertainment: {random_new_entertainment}')    
 
             
     
