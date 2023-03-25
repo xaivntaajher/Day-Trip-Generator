@@ -83,9 +83,11 @@ elif satisfy == 'N':
         print(f'Resturant: {random_resturant}')
         print(f'Transportation: {random_transportation}')
         print(f'Entertainment: {random_new_entertainment}')
-        satisfy = input('Are you satisfy with your trip? Y or N ')
-        print(satisfy)
-        if satisfy == "Y":
+        
+new_satify = input('Are you now satisfy with your trip? ')
+print(new_satify)
+if satisfy == "Y":
+    print(not_satify)
             
     
 
