@@ -5,37 +5,57 @@ resturants = ['Olive Garden', 'Red Lobster', 'Hot N Juicy', 'Five Guys', 'Wingst
 transportations = ['Car', 'Train', 'Airplane', 'Bus', 'Bike']
 entertainments = ['Movie', 'Comedy Show', 'Skydiving', 'Bungee Jumping', 'Concert']
 
-def display_destination(list_destinations):
+def display_destination(list_destinations, list_resturants, list_transportations, list_entertainments):
     for place in list_destinations:
         print(place)
-
-def display_resturant(list_resturants):
     for rest in list_resturants:
         print(rest)
-
-def display_transportation(list_transportations):
     for travel in list_transportations:
         print(travel)
-
-def display_entertainment(list_entertainments):
     for ent in list_entertainments:
         print(ent)
 
-def display_new_destination(list_new_destinations):
+# def display_destination(list_destinations): 
+#     for place in list_destinations:
+#         print(place)
+
+# def display_resturant(list_resturants):
+#     for rest in list_resturants:
+#         print(rest)
+
+# def display_transportation(list_transportations):
+#     for travel in list_transportations:
+#         print(travel)
+
+# def display_entertainment(list_entertainments):
+#     for ent in list_entertainments:
+#         print(ent)
+
+def display_new_destination(list_new_destinations, list_new_resturants, list_new_transportations, list_new_entertainments):
     for new_place in list_new_destinations:
         print(new_place)
-
-def display_new_resturant(list_new_resturants):
     for new_rest in list_new_resturants:
         print(new_rest)
-
-def display_new_transportation(list_new_transportations):
     for new_travel in list_new_transportations:
         print(new_travel)
-
-def display_new_entertainment(list_new_entertainments):
     for new_ent in list_new_entertainments:
-        print(new_ent)
+        print(new_ent)   
+
+# def display_new_destination(list_new_destinations):
+#     for new_place in list_new_destinations:
+#         print(new_place)
+
+# def display_new_resturant(list_new_resturants):
+#     for new_rest in list_new_resturants:
+#         print(new_rest)
+
+# def display_new_transportation(list_new_transportations):
+#     for new_travel in list_new_transportations:
+#         print(new_travel)
+
+# def display_new_entertainment(list_new_entertainments):
+#     for new_ent in list_new_entertainments:
+#         print(new_ent)
 
 random_new_destination = random.choice(destinations)
 random_new_resturant = random.choice(resturants)
@@ -83,11 +103,12 @@ elif satisfy == 'N':
         print(f'Resturant: {random_resturant}')
         print(f'Transportation: {random_transportation}')
         print(f'Entertainment: {random_new_entertainment}')
-        
-new_satify = input('Are you now satisfy with your trip? ')
-print(new_satify)
-if satisfy == "Y":
-    print(not_satify)
+
+    new_satify = input('Are you now satisfy with your trip? Y or N ')
+    print(new_satify)
+    if new_satify == "Y":
+        print()    
+
             
     
 
