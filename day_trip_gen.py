@@ -14,6 +14,7 @@ def display_destination(list_destinations, list_resturants, list_transportations
         print(travel)
     for ent in list_entertainments:
         print(ent)
+    
 
 # def display_destination(list_destinations): 
 #     for place in list_destinations:
