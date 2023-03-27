@@ -29,7 +29,7 @@ if trip_satisfication == 'Y':
     print(f'Entertainment: {random_entertainment}')
 elif trip_satisfication == 'N':
     
-    user_input = ""
+    user_input = ''
     while user_input != 'Y':
         new_trip = input(f'What would you like to change? Destination, Resturant, Transportation, Entertainment ' )
         if new_trip == 'Destination':
