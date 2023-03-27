@@ -6,20 +6,6 @@ transportations = ['Car', 'Train', 'Airplane', 'Bus', 'Bike']
 entertainments = ['Movie', 'Comedy Show', 'Skydiving', 'Bungee Jumping', 'Concert']
 
 
-
-# def display_day_trip(destinations, resturants, transportations, entertainments):
-#     random_destination = random.choice(destinations)
-#     print(f'Destination: {random_destination}')
-#     random_resturant = random.choice(resturants)
-#     print(f'Resturant: {random_resturant}')
-#     random_transportation = random.choice(transportations)
-#     print(f'Transportation: {random_transportation}')
-#     random_entertainment = random.choice(entertainments)
-#     print(f'Eyntertainment: {random_entertainment}')
-#     return (random_destination, random_resturant, random_transportation, random_entertainment)
-   
-
-
 random_destination = random.choice(destinations)
 print(f'Destination: {random_destination}')
 random_resturant = random.choice(resturants)
@@ -33,7 +19,6 @@ print(f'Eyntertainment: {random_entertainment}')
 trip = input('Are you satisfied with your trip? Y or N ')
 print(trip)
 
-# def print_day_trip()
 
 if trip == 'Y':
     print('Have fun and enjoy your trip!')
@@ -42,12 +27,8 @@ if trip == 'Y':
     print(f'Transportation: {random_transportation}')
     print(f'Entertainment: {random_entertainment}')
 elif trip == 'N':
-    # Destination = random_destination
-    # Resturant = random_resturant
-    # Transportation = random_transportation
-    # Entertainment = random_entertainment
     
-    # need def function and use for loop
+    # need def function and use loop
     user_input = ""
     while user_input != 'Y':
         new_trip = input(f'What would you like to change? Destination, Resturant, Transportation, Entertainment ' )
@@ -68,9 +49,16 @@ elif trip == 'N':
         # need def function and for loop
         user_input = input('Are you now satisfied with your trip? Y or N ')
 
+print('Have fun and enjoy your trip!')
+print(f'Destination: {random_destination}')
+print(f'Resturant: {random_resturant}')
+print(f'Transportation: {random_transportation}')
+print(f'Entertainment: {random_entertainment}')        
+
+
 
               
-              
+   
 
             
     
