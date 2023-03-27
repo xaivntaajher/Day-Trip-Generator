@@ -5,10 +5,7 @@ resturants = ['Olive Garden', 'Red Lobster', 'Hot N Juicy', 'Five Guys', 'Wingst
 transportations = ['Car', 'Train', 'Airplane', 'Bus', 'Bike']
 entertainments = ['Movie', 'Comedy Show', 'Skydiving', 'Bungee Jumping', 'Concert']
 
-random_new_destination = random.choice(destinations)
-random_new_resturant = random.choice(resturants)
-random_new_transportation = random.choice(transportations)
-random_new_entertainment = random.choice(entertainments)
+
 
 # def display_day_trip(destinations, resturants, transportations, entertainments):
 #     random_destination = random.choice(destinations)
@@ -20,8 +17,8 @@ random_new_entertainment = random.choice(entertainments)
 #     random_entertainment = random.choice(entertainments)
 #     print(f'Eyntertainment: {random_entertainment}')
 #     return (random_destination, random_resturant, random_transportation, random_entertainment)
-#    
-# display_day_trip(destinations,resturants,transportations,entertainments)
+   
+
 
 random_destination = random.choice(destinations)
 print(f'Destination: {random_destination}')
@@ -49,37 +46,30 @@ elif trip == 'N':
     # Resturant = random_resturant
     # Transportation = random_transportation
     # Entertainment = random_entertainment
-
-    new_trip = input('What would you like to change? Destination, Resturant, Transportation, Entertainment ' )
-    if new_trip == 'Destination':
-        print(f'Destination: {random_new_destination}')
-        print(f'Resturant: {random_resturant}')
-        print(f'Transportation: {random_transportation}')
-        print(f'Entertainment: {random_entertainment}')
-    elif new_trip == 'Resturant':
-        print(f'Destination: {random_destination}')
-        print(f'Resturant: {random_new_resturant}')
-        print(f'Transportation: {random_transportation}')
-        print(f'Entertainment: {random_entertainment}')
-    elif new_trip == 'Transportation':
-        print(f'Destination: {random_destination}')
-        print(f'Resturant: {random_resturant}')
-        print(f'Transportation: {random_new_transportation}')
-        print(f'Entertainment: {random_entertainment}')
-    elif new_trip == 'Entertainment':
-        print(f'Destination: {random_destination}')
-        print(f'Resturant: {random_resturant}')
-        print(f'Transportation: {random_transportation}')
-        print(f'Entertainment: {random_new_entertainment}')
-
-    new_trip = input('Are you now satisfied with your trip? Y or N ')
-    print(new_trip)
     
-    if new_trip == "Y":
-        print()   
-    elif new_trip == 'N':
-        for new_reselection in new_trip:
-            print(new_reselection)        
+    # need def function and use for loop
+    user_input = ""
+    while user_input != 'Y':
+        new_trip = input(f'What would you like to change? Destination, Resturant, Transportation, Entertainment ' )
+        if new_trip == 'Destination':
+            random_destination = random.choice(destinations)
+        elif new_trip == 'Resturant':
+            random_resturant = random.choice(resturants)
+        elif new_trip == 'Transportation':
+            random_transportation = random.choice(transportations)
+        elif new_trip == 'Entertainment':
+            random_entertainment = random.choice(entertainments)
+
+        print(f'Destination: {random_destination}')
+        print(f'Resturant: {random_resturant}')
+        print(f'Transportation: {random_transportation}')
+        print(f'Entertainment: {random_entertainment}')
+        
+        # need def function and for loop
+        user_input = input('Are you now satisfied with your trip? Y or N ')
+
+
+              
               
 
             
