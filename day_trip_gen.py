@@ -17,28 +17,28 @@ print(f'Eyntertainment: {random_entertainment}')
 
 #def function
 
-trip_satisfication = input('Are you satisfied with your trip? Y or N ')
-print(trip_satisfication)
+user_input = input('Are you satisfied with your trip? Y or N ')
+print(user_input)
 
 
-if trip_satisfication == 'Y':
+if user_input == 'Y':
     print('Have fun and enjoy your trip!')
     print(f'Destination: {random_destination}')
     print(f'Resturant: {random_resturant}')
     print(f'Transportation: {random_transportation}')
     print(f'Entertainment: {random_entertainment}')
-elif trip_satisfication == 'N':
+elif user_input == 'N':
     
-    user_input = ''
-    while user_input != 'Y':
-        new_trip = input(f'What would you like to change? Destination, Resturant, Transportation, Entertainment ' )
-        if new_trip == 'Destination':
+    reselected_user_input = ''
+    while reselected_user_input != 'Y':
+        new_selection = input(f'What would you like to change? Destination, Resturant, Transportation, Entertainment ' )
+        if new_selection == 'Destination':
             random_destination = random.choice(destinations)
-        elif new_trip == 'Resturant':
+        elif new_selection == 'Resturant':
             random_resturant = random.choice(resturants)
-        elif new_trip == 'Transportation':
+        elif new_selection == 'Transportation':
             random_transportation = random.choice(transportations)
-        elif new_trip == 'Entertainment':
+        elif new_selection == 'Entertainment':
             random_entertainment = random.choice(entertainments)
         
         print(f'Destination: {random_destination}')
@@ -47,7 +47,7 @@ elif trip_satisfication == 'N':
         print(f'Entertainment: {random_entertainment}')
         
     
-        user_input = input('Are you now satisfied with your trip? Y or N ')
+        reselected_user_input = input('Are you now satisfied with your trip? Y or N ')
 
     else:
         print('Have fun and enjoy your trip!')
