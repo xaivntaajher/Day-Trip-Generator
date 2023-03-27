@@ -15,20 +15,20 @@ print(f'Transportation: {random_transportation}')
 random_entertainment = random.choice(entertainments)
 print(f'Eyntertainment: {random_entertainment}')
 
+#def function
 
-trip = input('Are you satisfied with your trip? Y or N ')
-print(trip)
+trip_satisfication = input('Are you satisfied with your trip? Y or N ')
+print(trip_satisfication)
 
 
-if trip == 'Y':
+if trip_satisfication == 'Y':
     print('Have fun and enjoy your trip!')
     print(f'Destination: {random_destination}')
     print(f'Resturant: {random_resturant}')
     print(f'Transportation: {random_transportation}')
     print(f'Entertainment: {random_entertainment}')
-elif trip == 'N':
+elif trip_satisfication == 'N':
     
-    # need def function and use loop
     user_input = ""
     while user_input != 'Y':
         new_trip = input(f'What would you like to change? Destination, Resturant, Transportation, Entertainment ' )
@@ -40,28 +40,24 @@ elif trip == 'N':
             random_transportation = random.choice(transportations)
         elif new_trip == 'Entertainment':
             random_entertainment = random.choice(entertainments)
-
+        
         print(f'Destination: {random_destination}')
         print(f'Resturant: {random_resturant}')
         print(f'Transportation: {random_transportation}')
         print(f'Entertainment: {random_entertainment}')
         
-        # need def function and for loop
+    
         user_input = input('Are you now satisfied with your trip? Y or N ')
 
-print('Have fun and enjoy your trip!')
-print(f'Destination: {random_destination}')
-print(f'Resturant: {random_resturant}')
-print(f'Transportation: {random_transportation}')
-print(f'Entertainment: {random_entertainment}')        
+    else:
+        print('Have fun and enjoy your trip!')
+        print(f'Destination: {random_destination}')
+        print(f'Resturant: {random_resturant}')
+        print(f'Transportation: {random_transportation}')
+        print(f'Entertainment: {random_entertainment}')        
 
 
-
-              
    
-
-            
-    
 
 # def run_day_trip_gen():
 # def print_full_trip(list_of_options):
