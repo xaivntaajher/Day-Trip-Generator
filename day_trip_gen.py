@@ -6,56 +6,57 @@ transportations = ['Car', 'Train', 'Airplane', 'Bus', 'Bike']
 entertainments = ['Movie', 'Comedy Show', 'Skydiving', 'Bungee Jumping', 'Concert']
 
 
-random_destination = random.choice(destinations)
-print(f'Destination: {random_destination}')
-random_resturant = random.choice(resturants)
-print(f'Resturant: {random_resturant}')
-random_transportation = random.choice(transportations)
-print(f'Transportation: {random_transportation}')
-random_entertainment = random.choice(entertainments)
-print(f'Eyntertainment: {random_entertainment}')
-
-#def function
-
-user_input = input('Are you satisfied with your trip? Y or N ')
-print(user_input)
-
-
-if user_input == 'Y':
-    print('Have fun and enjoy your trip!')
+def day_trip_gen():
+    random_destination = random.choice(destinations)
     print(f'Destination: {random_destination}')
+    random_resturant = random.choice(resturants)
     print(f'Resturant: {random_resturant}')
+    random_transportation = random.choice(transportations)
     print(f'Transportation: {random_transportation}')
-    print(f'Entertainment: {random_entertainment}')
-elif user_input == 'N':
-    
-    reselected_user_input = ''
-    while reselected_user_input != 'Y':
-        new_selection = input(f'What would you like to change? Destination, Resturant, Transportation, Entertainment ' )
-        if new_selection == 'Destination':
-            random_destination = random.choice(destinations)
-        elif new_selection == 'Resturant':
-            random_resturant = random.choice(resturants)
-        elif new_selection == 'Transportation':
-            random_transportation = random.choice(transportations)
-        elif new_selection == 'Entertainment':
-            random_entertainment = random.choice(entertainments)
-        
-        print(f'Destination: {random_destination}')
-        print(f'Resturant: {random_resturant}')
-        print(f'Transportation: {random_transportation}')
-        print(f'Entertainment: {random_entertainment}')
-        
-    
-        reselected_user_input = input('Are you now satisfied with your trip? Y or N ')
+    random_entertainment = random.choice(entertainments)
+    print(f'Eyntertainment: {random_entertainment}')
 
-    else:
+    #def function
+
+    user_input = input('Are you satisfied with your trip? Y or N ')
+    print(user_input)
+
+
+    if user_input == 'Y':
         print('Have fun and enjoy your trip!')
         print(f'Destination: {random_destination}')
         print(f'Resturant: {random_resturant}')
         print(f'Transportation: {random_transportation}')
-        print(f'Entertainment: {random_entertainment}')        
+        print(f'Entertainment: {random_entertainment}')
+    elif user_input == 'N':
+        
+        reselected_user_input = ''
+        while reselected_user_input != 'Y':
+            new_selection = input(f'What would you like to change? Destination, Resturant, Transportation, Entertainment ' )
+            if new_selection == 'Destination':
+                random_destination = random.choice(destinations)
+            elif new_selection == 'Resturant':
+                random_resturant = random.choice(resturants)
+            elif new_selection == 'Transportation':
+                random_transportation = random.choice(transportations)
+            elif new_selection == 'Entertainment':
+                random_entertainment = random.choice(entertainments)
+            
+            print(f'Destination: {random_destination}')
+            print(f'Resturant: {random_resturant}')
+            print(f'Transportation: {random_transportation}')
+            print(f'Entertainment: {random_entertainment}')
+            
+        
+            reselected_user_input = input('Are you now satisfied with your trip? Y or N ')
 
+        else:
+            print('Have fun and enjoy your trip!')
+            print(f'Destination: {random_destination}')
+            print(f'Resturant: {random_resturant}')
+            print(f'Transportation: {random_transportation}')
+            print(f'Entertainment: {random_entertainment}')        
+day_trip_gen()
 
    
 
